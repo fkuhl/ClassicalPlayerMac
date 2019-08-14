@@ -13,24 +13,60 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection){
-            Text("First View")
+            ComposersView()
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("first")
-                        Text("First")
+                        Image(systemName: "person.fill")
+                        Text("Composers")
                     }
                 }
                 .tag(0)
-            Text("Second View")
+            Text("Albums")
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Second")
+                        Image(systemName: "rectangle.stack.fill")
+                        Text("Albums")
                     }
                 }
                 .tag(1)
+            Text("Artists")
+                .font(.title)
+                .tabItem {
+                    VStack {
+                        Image(systemName: "guitars")
+                        Text("Artists")
+                    }
+                }
+                .tag(2)
+            Text("Info")
+                .font(.title)
+                .tabItem {
+                    VStack {
+                        Image(systemName: "info.circle.fill")
+                        Text("Info")
+                    }
+                }
+                .tag(3)
+            Text("Songs")
+                .font(.title)
+                .tabItem {
+                    VStack {
+                        Image(systemName: "music.note")
+                        Text("Songs")
+                    }
+                }
+                .tag(4)
+            Text("Playlists")
+                .font(.title)
+                .tabItem {
+                    VStack {
+                        Image(systemName: "music.note.list")
+                        Text("Playlists")
+                    }
+                }
+                .tag(5)
         }
     }
 }

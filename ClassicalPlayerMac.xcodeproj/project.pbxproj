@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		27952021230347D20093CED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27952020230347D20093CED0 /* AppDelegate.swift */; };
 		27952023230347D20093CED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27952022230347D20093CED0 /* SceneDelegate.swift */; };
-		27952026230347D20093CED0 /* ClassicalPlayerMac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27952024230347D20093CED0 /* ClassicalPlayerMac.xcdatamodeld */; };
 		27952028230347D20093CED0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27952027230347D20093CED0 /* ContentView.swift */; };
 		2795202A230347D40093CED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27952029230347D40093CED0 /* Assets.xcassets */; };
 		2795202D230347D40093CED0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2795202C230347D40093CED0 /* Preview Assets.xcassets */; };
 		27952030230347D40093CED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2795202E230347D40093CED0 /* LaunchScreen.storyboard */; };
 		2795203B230347D40093CED0 /* ClassicalPlayerMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795203A230347D40093CED0 /* ClassicalPlayerMacTests.swift */; };
 		27952046230347D40093CED0 /* ClassicalPlayerMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27952045230347D40093CED0 /* ClassicalPlayerMacUITests.swift */; };
+		2795205C230349B50093CED0 /* ClassicalPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2795205A230349B50093CED0 /* ClassicalPlayer.xcdatamodeld */; };
+		2795205E23034A310093CED0 /* ClassicalMediaLibrary in Resources */ = {isa = PBXBuildFile; fileRef = 2795205D23034A310093CED0 /* ClassicalMediaLibrary */; };
+		27FA5D6523044B4D00AF6A99 /* ComposersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA5D6423044B4D00AF6A99 /* ComposersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		2795201D230347D20093CED0 /* ClassicalPlayerMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicalPlayerMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27952020230347D20093CED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27952022230347D20093CED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		27952025230347D20093CED0 /* ClassicalPlayerMac.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassicalPlayerMac.xcdatamodel; sourceTree = "<group>"; };
 		27952027230347D20093CED0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		27952029230347D40093CED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2795202C230347D40093CED0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,6 +52,10 @@
 		27952041230347D40093CED0 /* ClassicalPlayerMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassicalPlayerMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27952045230347D40093CED0 /* ClassicalPlayerMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicalPlayerMacUITests.swift; sourceTree = "<group>"; };
 		27952047230347D40093CED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27952053230348040093CED0 /* ClassicalPlayerMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClassicalPlayerMac.entitlements; sourceTree = "<group>"; };
+		2795205B230349B50093CED0 /* ClassicPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassicPlayer.xcdatamodel; sourceTree = "<group>"; };
+		2795205D23034A310093CED0 /* ClassicalMediaLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ClassicalMediaLibrary; sourceTree = "<group>"; };
+		27FA5D6423044B4D00AF6A99 /* ComposersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		27952014230347D20093CED0 = {
 			isa = PBXGroup;
 			children = (
+				2795205D23034A310093CED0 /* ClassicalMediaLibrary */,
 				2795201F230347D20093CED0 /* ClassicalPlayerMac */,
 				27952039230347D40093CED0 /* ClassicalPlayerMacTests */,
 				27952044230347D40093CED0 /* ClassicalPlayerMacUITests */,
@@ -101,13 +107,15 @@
 		2795201F230347D20093CED0 /* ClassicalPlayerMac */ = {
 			isa = PBXGroup;
 			children = (
+				27FA5D6323044B2E00AF6A99 /* Composers */,
+				2795205A230349B50093CED0 /* ClassicalPlayer.xcdatamodeld */,
+				27952053230348040093CED0 /* ClassicalPlayerMac.entitlements */,
 				27952020230347D20093CED0 /* AppDelegate.swift */,
 				27952022230347D20093CED0 /* SceneDelegate.swift */,
 				27952027230347D20093CED0 /* ContentView.swift */,
 				27952029230347D40093CED0 /* Assets.xcassets */,
 				2795202E230347D40093CED0 /* LaunchScreen.storyboard */,
 				27952031230347D40093CED0 /* Info.plist */,
-				27952024230347D20093CED0 /* ClassicalPlayerMac.xcdatamodeld */,
 				2795202B230347D40093CED0 /* Preview Content */,
 			);
 			path = ClassicalPlayerMac;
@@ -137,6 +145,14 @@
 				27952047230347D40093CED0 /* Info.plist */,
 			);
 			path = ClassicalPlayerMacUITests;
+			sourceTree = "<group>";
+		};
+		27FA5D6323044B2E00AF6A99 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				27FA5D6423044B4D00AF6A99 /* ComposersView.swift */,
+			);
+			path = Composers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27952030230347D40093CED0 /* LaunchScreen.storyboard in Resources */,
+				2795205E23034A310093CED0 /* ClassicalMediaLibrary in Resources */,
 				2795202D230347D40093CED0 /* Preview Assets.xcassets in Resources */,
 				2795202A230347D40093CED0 /* Assets.xcassets in Resources */,
 			);
@@ -270,10 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2795205C230349B50093CED0 /* ClassicalPlayer.xcdatamodeld in Sources */,
 				27952021230347D20093CED0 /* AppDelegate.swift in Sources */,
-				27952026230347D20093CED0 /* ClassicalPlayerMac.xcdatamodeld in Sources */,
 				27952028230347D20093CED0 /* ContentView.swift in Sources */,
 				27952023230347D20093CED0 /* SceneDelegate.swift in Sources */,
+				27FA5D6523044B4D00AF6A99 /* ComposersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +456,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClassicalPlayerMac/ClassicalPlayerMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "ClassicalPlayerMac/Preview\\ Content";
 				DEVELOPMENT_TEAM = KRGB7TX9DU;
 				ENABLE_PREVIEWS = YES;
@@ -449,8 +469,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tyndalesoft.ClassicalPlayerMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -458,7 +479,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClassicalPlayerMac/ClassicalPlayerMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "ClassicalPlayerMac/Preview\\ Content";
 				DEVELOPMENT_TEAM = KRGB7TX9DU;
 				ENABLE_PREVIEWS = YES;
@@ -469,8 +492,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tyndalesoft.ClassicalPlayerMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -598,13 +622,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		27952024230347D20093CED0 /* ClassicalPlayerMac.xcdatamodeld */ = {
+		2795205A230349B50093CED0 /* ClassicalPlayer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				27952025230347D20093CED0 /* ClassicalPlayerMac.xcdatamodel */,
+				2795205B230349B50093CED0 /* ClassicPlayer.xcdatamodel */,
 			);
-			currentVersion = 27952025230347D20093CED0 /* ClassicalPlayerMac.xcdatamodel */;
-			path = ClassicalPlayerMac.xcdatamodeld;
+			currentVersion = 2795205B230349B50093CED0 /* ClassicPlayer.xcdatamodel */;
+			path = ClassicalPlayer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
