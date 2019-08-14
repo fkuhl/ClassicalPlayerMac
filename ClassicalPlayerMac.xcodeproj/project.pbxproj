@@ -18,6 +18,10 @@
 		2795205C230349B50093CED0 /* ClassicalPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2795205A230349B50093CED0 /* ClassicalPlayer.xcdatamodeld */; };
 		2795205E23034A310093CED0 /* ClassicalMediaLibrary in Resources */ = {isa = PBXBuildFile; fileRef = 2795205D23034A310093CED0 /* ClassicalMediaLibrary */; };
 		27FA5D6523044B4D00AF6A99 /* ComposersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA5D6423044B4D00AF6A99 /* ComposersView.swift */; };
+		27FA5D69230453A800AF6A99 /* ComposerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA5D68230453A800AF6A99 /* ComposerRow.swift */; };
+		27FA5D6B230453D300AF6A99 /* ComposerPieces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA5D6A230453D300AF6A99 /* ComposerPieces.swift */; };
+		27FA5D712304556400AF6A99 /* ComposersPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA5D702304556400AF6A99 /* ComposersPiece.swift */; };
+		27FA5D7523048E1900AF6A99 /* ComposerComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA5D7423048E1900AF6A99 /* ComposerComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		2795205B230349B50093CED0 /* ClassicPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassicPlayer.xcdatamodel; sourceTree = "<group>"; };
 		2795205D23034A310093CED0 /* ClassicalMediaLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ClassicalMediaLibrary; sourceTree = "<group>"; };
 		27FA5D6423044B4D00AF6A99 /* ComposersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposersView.swift; sourceTree = "<group>"; };
+		27FA5D68230453A800AF6A99 /* ComposerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerRow.swift; sourceTree = "<group>"; };
+		27FA5D6A230453D300AF6A99 /* ComposerPieces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerPieces.swift; sourceTree = "<group>"; };
+		27FA5D702304556400AF6A99 /* ComposersPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposersPiece.swift; sourceTree = "<group>"; };
+		27FA5D7423048E1900AF6A99 /* ComposerComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,10 @@
 			isa = PBXGroup;
 			children = (
 				27FA5D6423044B4D00AF6A99 /* ComposersView.swift */,
+				27FA5D68230453A800AF6A99 /* ComposerRow.swift */,
+				27FA5D6A230453D300AF6A99 /* ComposerPieces.swift */,
+				27FA5D702304556400AF6A99 /* ComposersPiece.swift */,
+				27FA5D7423048E1900AF6A99 /* ComposerComposer.swift */,
 			);
 			path = Composers;
 			sourceTree = "<group>";
@@ -287,10 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FA5D712304556400AF6A99 /* ComposersPiece.swift in Sources */,
 				2795205C230349B50093CED0 /* ClassicalPlayer.xcdatamodeld in Sources */,
 				27952021230347D20093CED0 /* AppDelegate.swift in Sources */,
 				27952028230347D20093CED0 /* ContentView.swift in Sources */,
+				27FA5D7523048E1900AF6A99 /* ComposerComposer.swift in Sources */,
 				27952023230347D20093CED0 /* SceneDelegate.swift in Sources */,
+				27FA5D69230453A800AF6A99 /* ComposerRow.swift in Sources */,
+				27FA5D6B230453D300AF6A99 /* ComposerPieces.swift in Sources */,
 				27FA5D6523044B4D00AF6A99 /* ComposersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
