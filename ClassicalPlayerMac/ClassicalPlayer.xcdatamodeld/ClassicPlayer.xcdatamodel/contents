@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14886.2" systemVersion="19A526h" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Album" representedClassName="Album" codeGenerationType="class">
+        <attribute name="albumID" optional="YES" attributeType="String"/>
+        <attribute name="artist" optional="YES" attributeType="String"/>
+        <attribute name="composer" optional="YES" attributeType="String"/>
+        <attribute name="genre" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="trackCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="year" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="pieces" optional="YES" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="Piece" inverseName="album" inverseEntity="Piece"/>
+        <fetchIndex name="byPiecesIndex">
+            <fetchIndexElement property="pieces" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <userInfo>
+            <entry key="com.apple.syncservices.IdentityProperties" value=""/>
+        </userInfo>
+    </entity>
+    <entity name="MediaLibraryInfo" representedClassName="MediaLibraryInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="albumCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastModifiedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="movementCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pieceCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="songCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Movement" representedClassName="Movement" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="trackID" optional="YES" attributeType="String"/>
+        <attribute name="trackURL" optional="YES" attributeType="URI"/>
+        <relationship name="piece" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Piece" inverseName="movements" inverseEntity="Piece"/>
+    </entity>
+    <entity name="Piece" representedClassName="Piece" codeGenerationType="class">
+        <attribute name="albumID" optional="YES" attributeType="String"/>
+        <attribute name="artist" optional="YES" attributeType="String"/>
+        <attribute name="artistID" optional="YES" attributeType="String"/>
+        <attribute name="composer" attributeType="String"/>
+        <attribute name="genre" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="trackID" optional="YES" attributeType="String"/>
+        <attribute name="trackURL" optional="YES" attributeType="URI"/>
+        <relationship name="album" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Album" inverseName="pieces" inverseEntity="Album"/>
+        <relationship name="movements" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Movement" inverseName="piece" inverseEntity="Movement"/>
+        <fetchIndex name="byDiscIndex">
+            <fetchIndexElement property="album" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <userInfo>
+            <entry key="com.apple.syncservices.IdentityProperties" value=""/>
+        </userInfo>
+    </entity>
+    <entity name="Song" representedClassName="Song" syncable="YES" codeGenerationType="class">
+        <attribute name="albumID" optional="YES" attributeType="String"/>
+        <attribute name="artist" optional="YES" attributeType="String"/>
+        <attribute name="duration" optional="YES" attributeType="String"/>
+        <attribute name="persistentID" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="trackURL" optional="YES" attributeType="URI"/>
+    </entity>
+    <elements>
+        <element name="Album" positionX="108" positionY="117" width="128" height="163"/>
+        <element name="MediaLibraryInfo" positionX="315" positionY="207" width="128" height="120"/>
+        <element name="Movement" positionX="529" positionY="126" width="128" height="118"/>
+        <element name="Piece" positionX="342" positionY="123" width="128" height="193"/>
+        <element name="Song" positionX="315" positionY="207" width="128" height="135"/>
+    </elements>
+</model>
