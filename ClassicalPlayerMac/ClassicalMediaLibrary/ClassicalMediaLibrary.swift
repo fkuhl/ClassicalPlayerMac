@@ -54,7 +54,7 @@ public class ClassicalMediaLibrary {
             //with an "audio" ("app plays audio ... AirPlay") entry.
             try audioSession.setCategory(AVAudioSession.Category.playback,
                                          mode: AVAudioSession.Mode.default,
-                                         policy: .longForm) //enable AirPlay
+                                         policy: AVAudioSession.RouteSharingPolicy.longFormAudio) //enable AirPlay
         } catch {
             let error = error as NSError
             NotificationCenter.default.post(Notification(name: .initializingError,

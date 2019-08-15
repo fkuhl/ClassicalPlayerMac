@@ -10,6 +10,13 @@ import Foundation
 
 public enum MediaLibraryState {
     case authorizationUnknown
-    case authorizationDenied
+    case authorizationDenied(message: String)
     case authorizationGranted
+    case libraryChanged
+    case dataAreAvailable
+    case dataMissing
+    case initializingError(message: String)
+    case loadingError(message: String)
+    case savingError(message: String)
+    case storeError(message: String)
 }
