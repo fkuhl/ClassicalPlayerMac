@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		2710FC402305CB83002E72D8 /* MediaLibraryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC3F2305CB83002E72D8 /* MediaLibraryProvider.swift */; };
 		2710FC422305CE42002E72D8 /* MediaLibraryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC412305CE42002E72D8 /* MediaLibraryState.swift */; };
+		2710FC4D2305D197002E72D8 /* LibraryReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC442305D196002E72D8 /* LibraryReporter.swift */; };
+		2710FC4E2305D197002E72D8 /* ReportingStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC452305D196002E72D8 /* ReportingStructures.swift */; };
+		2710FC4F2305D197002E72D8 /* ComposersInLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC462305D196002E72D8 /* ComposersInLibrary.swift */; };
+		2710FC502305D197002E72D8 /* Anarthrous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC472305D196002E72D8 /* Anarthrous.swift */; };
+		2710FC512305D197002E72D8 /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC482305D196002E72D8 /* NotificationNames.swift */; };
+		2710FC522305D197002E72D8 /* MovementParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC492305D196002E72D8 /* MovementParsing.swift */; };
+		2710FC532305D197002E72D8 /* ClassicalMediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC4A2305D197002E72D8 /* ClassicalMediaLibrary.swift */; };
+		2710FC542305D197002E72D8 /* MPMediaItem+Playability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC4B2305D197002E72D8 /* MPMediaItem+Playability.swift */; };
+		2710FC552305D197002E72D8 /* ProgressDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC4C2305D197002E72D8 /* ProgressDelegate.swift */; };
 		27952021230347D20093CED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27952020230347D20093CED0 /* AppDelegate.swift */; };
 		27952023230347D20093CED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27952022230347D20093CED0 /* SceneDelegate.swift */; };
 		27952028230347D20093CED0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27952027230347D20093CED0 /* ContentView.swift */; };
@@ -18,7 +27,6 @@
 		2795203B230347D40093CED0 /* ClassicalPlayerMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2795203A230347D40093CED0 /* ClassicalPlayerMacTests.swift */; };
 		27952046230347D40093CED0 /* ClassicalPlayerMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27952045230347D40093CED0 /* ClassicalPlayerMacUITests.swift */; };
 		2795205C230349B50093CED0 /* ClassicalPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2795205A230349B50093CED0 /* ClassicalPlayer.xcdatamodeld */; };
-		2795205E23034A310093CED0 /* ClassicalMediaLibrary in Resources */ = {isa = PBXBuildFile; fileRef = 2795205D23034A310093CED0 /* ClassicalMediaLibrary */; };
 		27FA5D6523044B4D00AF6A99 /* ComposersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA5D6423044B4D00AF6A99 /* ComposersView.swift */; };
 		27FA5D69230453A800AF6A99 /* ComposerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA5D68230453A800AF6A99 /* ComposerRow.swift */; };
 		27FA5D6B230453D300AF6A99 /* ComposerPieces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA5D6A230453D300AF6A99 /* ComposerPieces.swift */; };
@@ -46,6 +54,15 @@
 /* Begin PBXFileReference section */
 		2710FC3F2305CB83002E72D8 /* MediaLibraryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryProvider.swift; sourceTree = "<group>"; };
 		2710FC412305CE42002E72D8 /* MediaLibraryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryState.swift; sourceTree = "<group>"; };
+		2710FC442305D196002E72D8 /* LibraryReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryReporter.swift; sourceTree = "<group>"; };
+		2710FC452305D196002E72D8 /* ReportingStructures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportingStructures.swift; sourceTree = "<group>"; };
+		2710FC462305D196002E72D8 /* ComposersInLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposersInLibrary.swift; sourceTree = "<group>"; };
+		2710FC472305D196002E72D8 /* Anarthrous.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anarthrous.swift; sourceTree = "<group>"; };
+		2710FC482305D196002E72D8 /* NotificationNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
+		2710FC492305D196002E72D8 /* MovementParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovementParsing.swift; sourceTree = "<group>"; };
+		2710FC4A2305D197002E72D8 /* ClassicalMediaLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicalMediaLibrary.swift; sourceTree = "<group>"; };
+		2710FC4B2305D197002E72D8 /* MPMediaItem+Playability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MPMediaItem+Playability.swift"; sourceTree = "<group>"; };
+		2710FC4C2305D197002E72D8 /* ProgressDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressDelegate.swift; sourceTree = "<group>"; };
 		2795201D230347D20093CED0 /* ClassicalPlayerMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicalPlayerMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27952020230347D20093CED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27952022230347D20093CED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +79,6 @@
 		27952047230347D40093CED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27952053230348040093CED0 /* ClassicalPlayerMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClassicalPlayerMac.entitlements; sourceTree = "<group>"; };
 		2795205B230349B50093CED0 /* ClassicPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassicPlayer.xcdatamodel; sourceTree = "<group>"; };
-		2795205D23034A310093CED0 /* ClassicalMediaLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ClassicalMediaLibrary; sourceTree = "<group>"; };
 		27FA5D6423044B4D00AF6A99 /* ComposersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposersView.swift; sourceTree = "<group>"; };
 		27FA5D68230453A800AF6A99 /* ComposerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerRow.swift; sourceTree = "<group>"; };
 		27FA5D6A230453D300AF6A99 /* ComposerPieces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerPieces.swift; sourceTree = "<group>"; };
@@ -95,6 +111,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2710FC432305D196002E72D8 /* Reporting */ = {
+			isa = PBXGroup;
+			children = (
+				2710FC442305D196002E72D8 /* LibraryReporter.swift */,
+				2710FC452305D196002E72D8 /* ReportingStructures.swift */,
+			);
+			path = Reporting;
+			sourceTree = "<group>";
+		};
+		2710FC572305D1C3002E72D8 /* ClassicalMediaLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				2710FC472305D196002E72D8 /* Anarthrous.swift */,
+				2710FC4A2305D197002E72D8 /* ClassicalMediaLibrary.swift */,
+				2710FC462305D196002E72D8 /* ComposersInLibrary.swift */,
+				2710FC492305D196002E72D8 /* MovementParsing.swift */,
+				2710FC4B2305D197002E72D8 /* MPMediaItem+Playability.swift */,
+				2710FC482305D196002E72D8 /* NotificationNames.swift */,
+				2710FC4C2305D197002E72D8 /* ProgressDelegate.swift */,
+				2710FC432305D196002E72D8 /* Reporting */,
+			);
+			path = ClassicalMediaLibrary;
+			sourceTree = "<group>";
+		};
 		27952014230347D20093CED0 = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +158,7 @@
 		2795201F230347D20093CED0 /* ClassicalPlayerMac */ = {
 			isa = PBXGroup;
 			children = (
-				2795205D23034A310093CED0 /* ClassicalMediaLibrary */,
+				2710FC572305D1C3002E72D8 /* ClassicalMediaLibrary */,
 				27FA5D6323044B2E00AF6A99 /* Composers */,
 				2795205A230349B50093CED0 /* ClassicalPlayer.xcdatamodeld */,
 				27952053230348040093CED0 /* ClassicalPlayerMac.entitlements */,
@@ -278,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27952030230347D40093CED0 /* LaunchScreen.storyboard in Resources */,
-				2795205E23034A310093CED0 /* ClassicalMediaLibrary in Resources */,
 				2795202D230347D40093CED0 /* Preview Assets.xcassets in Resources */,
 				2795202A230347D40093CED0 /* Assets.xcassets in Resources */,
 			);
@@ -305,15 +344,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2710FC542305D197002E72D8 /* MPMediaItem+Playability.swift in Sources */,
+				2710FC552305D197002E72D8 /* ProgressDelegate.swift in Sources */,
+				2710FC532305D197002E72D8 /* ClassicalMediaLibrary.swift in Sources */,
 				27FA5D712304556400AF6A99 /* ComposersPiece.swift in Sources */,
 				2710FC402305CB83002E72D8 /* MediaLibraryProvider.swift in Sources */,
+				2710FC4F2305D197002E72D8 /* ComposersInLibrary.swift in Sources */,
+				2710FC522305D197002E72D8 /* MovementParsing.swift in Sources */,
 				2795205C230349B50093CED0 /* ClassicalPlayer.xcdatamodeld in Sources */,
 				27952021230347D20093CED0 /* AppDelegate.swift in Sources */,
+				2710FC4D2305D197002E72D8 /* LibraryReporter.swift in Sources */,
 				27952028230347D20093CED0 /* ContentView.swift in Sources */,
 				27FA5D7523048E1900AF6A99 /* ComposerComposer.swift in Sources */,
 				27952023230347D20093CED0 /* SceneDelegate.swift in Sources */,
 				27FA5D69230453A800AF6A99 /* ComposerRow.swift in Sources */,
+				2710FC502305D197002E72D8 /* Anarthrous.swift in Sources */,
+				2710FC4E2305D197002E72D8 /* ReportingStructures.swift in Sources */,
 				27FA5D6B230453D300AF6A99 /* ComposerPieces.swift in Sources */,
+				2710FC512305D197002E72D8 /* NotificationNames.swift in Sources */,
 				2710FC422305CE42002E72D8 /* MediaLibraryState.swift in Sources */,
 				27FA5D6523044B4D00AF6A99 /* ComposersView.swift in Sources */,
 			);
