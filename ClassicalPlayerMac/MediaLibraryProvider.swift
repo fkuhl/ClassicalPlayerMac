@@ -57,6 +57,7 @@ public class MediaLibraryProvider: NSObject, ObservableObject {
     
     private func signalChange() {
         DispatchQueue.main.async {
+            NSLog("did change to \(self.mediaLibraryState)")
             self.didChange.send(()) //always send on main thread
         }
     }
