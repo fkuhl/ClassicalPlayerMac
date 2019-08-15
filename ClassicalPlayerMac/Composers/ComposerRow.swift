@@ -16,10 +16,12 @@ struct ComposerRow: View {
     }
 }
 
-//#if DEBUG
-//struct ComposerRow_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ComposerRow(composer: ComposerComposer)
-//    }
-//}
-//#endif
+#if DEBUG
+struct ComposerRow_Previews: PreviewProvider {
+    static var previews: some View {
+        ComposerRow(composer: ComposerComposer(id: 1, name: "J Strauss", pieces:
+            [ComposersPiece(id: 1, name: "Walz", composer: "J Strauss"),
+             ComposersPiece(id: 2, name: "Another Walz", composer: "J Strauss")]))
+    }
+}
+#endif

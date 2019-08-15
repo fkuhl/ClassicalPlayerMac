@@ -21,10 +21,12 @@ struct ComposerPieces: View {
     }
 }
 
-//#if DEBUG
-//struct ComposerPieces_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ComposerPieces()
-//    }
-//}
-//#endif
+#if DEBUG
+struct ComposerPieces_Previews: PreviewProvider {
+    static var previews: some View {
+        ComposerPieces(pieces: [
+            ComposersPiece(id: 1, name: "Walz", composer: "J Strauss"),
+            ComposersPiece(id: 2, name: "Some Stuff", composer: "J Strauss")])
+    }
+}
+#endif

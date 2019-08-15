@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2710FC402305CB83002E72D8 /* MediaLibraryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC3F2305CB83002E72D8 /* MediaLibraryProvider.swift */; };
+		2710FC422305CE42002E72D8 /* MediaLibraryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710FC412305CE42002E72D8 /* MediaLibraryState.swift */; };
 		27952021230347D20093CED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27952020230347D20093CED0 /* AppDelegate.swift */; };
 		27952023230347D20093CED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27952022230347D20093CED0 /* SceneDelegate.swift */; };
 		27952028230347D20093CED0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27952027230347D20093CED0 /* ContentView.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2710FC3F2305CB83002E72D8 /* MediaLibraryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryProvider.swift; sourceTree = "<group>"; };
+		2710FC412305CE42002E72D8 /* MediaLibraryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryState.swift; sourceTree = "<group>"; };
 		2795201D230347D20093CED0 /* ClassicalPlayerMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicalPlayerMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27952020230347D20093CED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27952022230347D20093CED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +98,6 @@
 		27952014230347D20093CED0 = {
 			isa = PBXGroup;
 			children = (
-				2795205D23034A310093CED0 /* ClassicalMediaLibrary */,
 				2795201F230347D20093CED0 /* ClassicalPlayerMac */,
 				27952039230347D40093CED0 /* ClassicalPlayerMacTests */,
 				27952044230347D40093CED0 /* ClassicalPlayerMacUITests */,
@@ -115,6 +118,7 @@
 		2795201F230347D20093CED0 /* ClassicalPlayerMac */ = {
 			isa = PBXGroup;
 			children = (
+				2795205D23034A310093CED0 /* ClassicalMediaLibrary */,
 				27FA5D6323044B2E00AF6A99 /* Composers */,
 				2795205A230349B50093CED0 /* ClassicalPlayer.xcdatamodeld */,
 				27952053230348040093CED0 /* ClassicalPlayerMac.entitlements */,
@@ -125,6 +129,8 @@
 				2795202E230347D40093CED0 /* LaunchScreen.storyboard */,
 				27952031230347D40093CED0 /* Info.plist */,
 				2795202B230347D40093CED0 /* Preview Content */,
+				2710FC3F2305CB83002E72D8 /* MediaLibraryProvider.swift */,
+				2710FC412305CE42002E72D8 /* MediaLibraryState.swift */,
 			);
 			path = ClassicalPlayerMac;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27FA5D712304556400AF6A99 /* ComposersPiece.swift in Sources */,
+				2710FC402305CB83002E72D8 /* MediaLibraryProvider.swift in Sources */,
 				2795205C230349B50093CED0 /* ClassicalPlayer.xcdatamodeld in Sources */,
 				27952021230347D20093CED0 /* AppDelegate.swift in Sources */,
 				27952028230347D20093CED0 /* ContentView.swift in Sources */,
@@ -307,6 +314,7 @@
 				27952023230347D20093CED0 /* SceneDelegate.swift in Sources */,
 				27FA5D69230453A800AF6A99 /* ComposerRow.swift in Sources */,
 				27FA5D6B230453D300AF6A99 /* ComposerPieces.swift in Sources */,
+				2710FC422305CE42002E72D8 /* MediaLibraryState.swift in Sources */,
 				27FA5D6523044B4D00AF6A99 /* ComposersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

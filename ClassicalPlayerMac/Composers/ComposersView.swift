@@ -19,6 +19,11 @@ struct ComposersView: View {
         let c1 = ComposerComposer(id: 1, name: "J Strauss", pieces: pieces)
         let c2 = ComposerComposer(id: 2, name: "GM", pieces: mpieces)
         let cs = [c1, c2]
+        
+        /**
+        If the List data don't conform to Identifiable, but you have a suitable ID field, use it:
+         List(landmarkData, id: \.id)
+         */
 
         return NavigationView {
             List(cs) { composer in
