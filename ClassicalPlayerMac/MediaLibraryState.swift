@@ -19,4 +19,5 @@ public enum MediaLibraryState {
     case loadingError(message: String)
     case savingError(message: String)
     case storeError(message: String)
+    case clearingError(message: String)
 }

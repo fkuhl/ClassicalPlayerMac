@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ComposersView: View {
+    @ObservedObject var mediaLibraryProvider = MediaLibraryProvider.sharedInstance
+
     var body: some View {
         let piece1 = ComposersPiece(id: 1, name: "Walz", composer: "J Strauss")
         let piece2 = ComposersPiece(id: 2, name: "Another Walz", composer: "J Strauss")
@@ -34,6 +36,7 @@ struct ComposersView: View {
             .navigationBarTitle(Text("Composers"))
         }
     }
+    
 }
 
 #if DEBUG

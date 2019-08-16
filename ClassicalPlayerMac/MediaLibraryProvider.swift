@@ -12,13 +12,15 @@ import CoreData
 import MediaPlayer
 
 public class MediaLibraryProvider: NSObject, ObservableObject {
-    public var mediaLibraryState: MediaLibraryState = .authorizationUnknown
-    
     private var mediaLibrary = ClassicalMediaLibrary.sharedInstance
     private var didChange = PassthroughSubject<Void,Never>()
     private var libraryAccessChecked = false
-
-    override init() {
+    
+    
+    // MARK - Initializer
+    
+    public static let sharedInstance = MediaLibraryProvider()
+    private override init() {
         super.init()
         NotificationCenter.default.addObserver(self,
                                                 selector: #selector(handleDataIsAvailable),
@@ -55,6 +57,21 @@ public class MediaLibraryProvider: NSObject, ObservableObject {
         checkMediaLibraryAccess()
     }
     
+    
+    // MARK - public members
+    
+    public var mediaLibraryState: MediaLibraryState = .authorizationUnknown
+    public var showLibraryChanged = false
+    
+    public func replaceLibraryWithMedia() {
+        mediaLibrary.replaceAppLibraryWithMedia()
+    }
+    
+    public func retrieveMediaLibraryInfo() {
+        mediaLibrary.retrieveMediaLibraryInfo(from: mediaLibrary.mainThreadContext)
+    }
+    
+
     private func signalChange() {
         DispatchQueue.main.async {
             NSLog("did change to \(self.mediaLibraryState)")
@@ -88,9 +105,6 @@ public class MediaLibraryProvider: NSObject, ObservableObject {
             self.libraryAccessChecked = true
         }
     }
-
-    
-    
     
     // MARK - Notification handlers
     
@@ -103,12 +117,16 @@ public class MediaLibraryProvider: NSObject, ObservableObject {
     @objc
     private func handleLibraryChanged(notification: NSNotification) {
         mediaLibraryState = .libraryChanged
+        showLibraryChanged = true
         signalChange()
     }
     
     @objc
     private func handleClearingError(notification: NSNotification) {
-    }
+        let message = String(describing: notification.userInfo)
+        mediaLibraryState = .clearingError(message: message)
+        signalChange()
+}
     
     @objc
     private func handleInitializingError(notification: NSNotification) {
