@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var mediaLibraryProvider = MediaLibraryProvider.sharedInstance
     @State private var selection = 0
-    @State private var shoLib = true
+    @State private var shoLib = false
  
     var body: some View {
         TabView(selection: $selection) {
@@ -70,16 +70,16 @@ struct ContentView: View {
                 }
                 .tag(5)
         }
-        .alert(isPresented: $shoLib) {
-            Alert(title: Text("iTunes Library Changed"),
-                  message: Text("Load newest media?"),
-                  primaryButton: .destructive(Text("Load newest media")) {
-                    
-                },
-                  secondaryButton: .default(Text("Skip the load for now")){
-                    
-                })
-        }
+           .alert(isPresented: $shoLib) {
+               Alert(title: Text("iTunes Library Changed"),
+                     message: Text("Load newest media?"),
+                     primaryButton: .destructive(Text("Load newest media")) {
+
+                   },
+                     secondaryButton: .default(Text("Skip the load for now")){
+
+                   })
+           }
 //        .actionSheet(isPresented: $shoLib /*$mediaLibraryProvider.showLibraryChanged*/) {
 //            ActionSheet(title: Text("iTunes Library Changed"), message: Text("Load newest media?"), buttons: [
 //                .cancel(Text("Skip the load for now")) {
